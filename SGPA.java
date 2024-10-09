@@ -23,7 +23,7 @@ class Student{
             aMarks[i] = in.nextInt();
             System.out.println("Subject " + (i + 1) + " Credit");
             aCredit[i] = in.nextInt();
-            if (aMarks[i]<=100 && aMarks[i]>90)
+            if (aMarks[i]<=100 && aMarks[i]>=90)
                 aGrade[i]=10;
             else if (aMarks[i]<90 && aMarks[i]>=80)
                 aGrade[i]=9;
