@@ -1,5 +1,3 @@
-import java.util.*;
-
 class Account {
     String acc_name, acc_no, acc_type;
     double balance;
