@@ -1,6 +1,7 @@
 import java.util.*;
 
-public class QuadEqn {
+// Quadratic Equation
+public class Lab_1 {
     public static void main(String args[]){
         int a,b,c;
         float r1,r2;

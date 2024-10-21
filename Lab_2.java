@@ -50,7 +50,7 @@ class Student{
     }
 }
 
-public class SGPA {
+public class Lab_2 {
     public static void main(String args[]){
         Scanner in = new Scanner(System.in);
         int noSt;
