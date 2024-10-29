@@ -16,7 +16,7 @@ class Account {
             System.out.println("Insufficient Balance");
         else{
             balance -= amt;
-            System.out.println("Withdrawn Ammount = "+amt);
+            System.out.println("Withdrawal Amount = "+amt);
         }
     }
     void checkBalance() {
@@ -27,14 +27,16 @@ class Account {
 class CurAcct extends Account {
     CurAcct(String name, String no, double bal) {
         super(name, no, "Current Account", bal);
-        if (bal < 5000) {
-            System.out.println("Min Balance in Bank Account should be 5000\nService Charge of 100 rs will be charged for each month");
-            this.balance = bal - 100.0;
+    }
+    void minBal(){
+        if (balance < 5000) {
+            System.out.println("Min Balance in Bank Account should be 5000\nService Charge of 100/- will be charged");
+            this.balance = balance - 100.0;
         }
     }
     void cheque(double amt) {
         balance -= amt;
-        System.out.println("Cheque Ammount = "+amt);
+        System.out.println("Cheque Amount = "+amt);
     }
 }
 // The savings account provides compound interest and withdrawal facilities but no cheque book facility
@@ -61,10 +63,14 @@ class Lab_5{
         sa1.withdraw(10000);
         sa1.checkBalance();
         sa1.compInt(7, 3);
-        System.out.println();
         // Current Account
+        CurAcct ca2 = new CurAcct("Ria", "071", 3000);
+        System.out.println("\nName = "+ca2.acc_name+"\nAccount No. = "+ca2.acc_no+"\nAccount Type = "+ca2.acc_type);
+        ca2.minBal();
+        ca2.checkBalance();
         CurAcct ca1 = new CurAcct("Richa", "315", 17000);
-        System.out.println("Name = "+ca1.acc_name+"\nAccount No. = "+ca1.acc_no+"\nAccount Type = "+ca1.acc_type);
+        System.out.println("\nName = "+ca1.acc_name+"\nAccount No. = "+ca1.acc_no+"\nAccount Type = "+ca1.acc_type);
+        ca1.minBal();
         ca1.checkBalance();
         ca1.cheque(3000);
         ca1.deposit(7000);
