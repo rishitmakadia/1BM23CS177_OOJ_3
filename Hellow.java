@@ -3,7 +3,9 @@ import java.util.Scanner;
 class Hellow{
 	public static void main(String args[]) {
 	System.out.println("Hello World");
-
+	for(int i=0; i<args.length; i++) {
+		System.out.println("args[" + i + "]: " + args[i]);
+	}
 	// Area of Rectangle
 //		System.out.println("Area of Rectangle 9 X 5 ");
 //		int a=9, b=5;
