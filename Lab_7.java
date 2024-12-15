@@ -25,8 +25,13 @@ class Son extends Father{
             throw new ageException("Age Invalid (less than 0)");
         }
         this.ageS=y;
-        if (ageS<ageF){
-            throw new ageException("Son's Age greater than Father's age");
+        if (ageS>ageF){
+            try {
+                throw new ageException("Son's Age greater than Father's age");
+            }
+            catch(ageException e){
+                System.out.println("Son > Father\n"+e);
+            }
         }
     }
 }
@@ -35,7 +40,6 @@ public class Lab_7 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a,b;
-
             try {
                 System.out.print("Enter Father Age: ");
                 a = sc.nextInt();
@@ -44,8 +48,10 @@ public class Lab_7 {
                 Son obj = new Son(a, b);
             }
              catch (ageException e) {
-                 System.out.println("Exception Occured : "+e);;
+                 System.out.println("Exception Occured : "+e);
             }
-
+            finally {
+                System.out.println("Finally Main Ended");
+            }
     }
 }
