@@ -11,7 +11,7 @@ class Father {
     int ageF;
     Father (int x) throws ageException{
         if (x<0){
-            throw new ageException("Age Invalid (less than 0)");
+            throw new ageException("Father Age Invalid (less than 0)");
         }
         this.ageF=x;
     }
@@ -22,7 +22,7 @@ class Son extends Father{
     Son (int x, int y) throws ageException{
         super(x);
         if (y<0){
-            throw new ageException("Age Invalid (less than 0)");
+            throw new ageException("Son Age Invalid (less than 0)");
         }
         this.ageS=y;
         if (ageS>ageF){
