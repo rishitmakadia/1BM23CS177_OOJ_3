@@ -12,7 +12,7 @@ public class Lab_6 {
         String name, usn;
         System.out.println("Enter No. of Students: ");
         noStd=sc.nextInt();
-        External student[] = new External[noStd];
+        External[] student = new External[noStd];
         for (int i=0; i<noStd; i++){
             System.out.println("\nEnter details for Student " + (i + 1));
 

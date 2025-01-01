@@ -8,6 +8,7 @@ public class WrapDemo {
         iob1= in.nextInt();
         int i1=iob1;
         System.out.println("i = "+i1+"\niob = "+iob1);
+//        System.out.println(i1.getClass().getName());  //Error as i1 is a primitive type data
         System.out.println(iob1.getClass().getName());
         System.out.println();
         Double dob1 = Double.valueOf(91.7);

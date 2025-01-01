@@ -18,6 +18,7 @@ public class GenDemo1 {
         String st = str1.getob();
         System.out.println(st);
         System.out.println();
+
         Gen1 <Double> dob1;
         dob1 = new Gen1 <Double>(17.8);
 //        int v = dob1.getob(); // Error double instead of int
@@ -30,6 +31,7 @@ public class GenDemo1 {
 //        Gen1 <Byte> bob2;
 //        bob2 = new Gen1 <Byte> (Byte.valueOf((byte)0));
         System.out.println();
+
         Gen1 <Integer> fob1;
         fob1 = new Gen1 <Integer> (11);
         int i = fob1.getob();

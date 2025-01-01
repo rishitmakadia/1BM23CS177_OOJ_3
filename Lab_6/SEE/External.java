@@ -1,6 +1,8 @@
 package Lab_6.SEE;
 
-import Lab_6.CIE.*;
+import Lab_6.CIE.Internal;
+import Lab_6.CIE.Personal;
+//import Lab_6.CIE.*;
 
 public class External extends Personal {
     public double[] eMarks = new double[5];

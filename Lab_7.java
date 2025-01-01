@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.*;
 
 class ageException extends Exception{
@@ -31,6 +30,7 @@ class Son extends Father{
             }
             catch(ageException e){
                 System.out.println("Son > Father\n"+e);
+//                throw e;
             }
         }
     }

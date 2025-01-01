@@ -46,10 +46,12 @@ class Lab_8{
         branch b1=new branch("CSE");
         try {
             b1.start();
+//            b1.join();
             for (int i=0; i<4;i++){
                 c1[i].start();
-                // c1[i].join();
+                 c1[i].join();
             }
+            b1.join();
         } 
         catch (Exception e) {
             System.out.println("Exception Occured: "+e);
