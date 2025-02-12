@@ -13,11 +13,11 @@ public class Lab_1 {
         int disc = (b*b)-(4*a*c);
         if (disc>0)
         {
-            System.out.println("Real and distinct roots");
-            r1 = (float)((-b)+(disc*0.5))/(2*a);
-            r2 = (float)((-b)-(disc*0.5))/(2*a);
-            System.out.println("Root 1 = "+r1);
-            System.out.println("Root 2 = "+r2);
+            System.out.println("Real and Distinct Roots");
+            r1 = (float) ((-b + Math.sqrt(disc)) / (2.0 * a));
+            r2 = (float) ((-b - Math.sqrt(disc)) / (2.0 * a));
+            System.out.println("Root 1 = " + r1);
+            System.out.println("Root 2 = " + r2);
         }
         else if (disc==0)
         {
@@ -31,7 +31,7 @@ public class Lab_1 {
         {
             System.out.println("Imaginary Roots ");
             r1 = (float)(-b)/(2*a);
-            r2 = (float)(disc)/(2*a);
+            r2 = (float) (Math.sqrt(disc))/(2*a);
             System.out.println("Root 1 = "+r1+" "+(+r2)+"i");
             System.out.println("Root 2 = "+r1+" "+(-r2)+"i");
         }

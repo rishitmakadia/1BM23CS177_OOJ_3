@@ -14,7 +14,6 @@ class Callme {
 }
 class Caller implements Runnable {
     String msg;
-
     Callme target;
     Thread t;
     public Caller(Callme targ, String s) {
@@ -36,6 +35,7 @@ class Synch1 {
         Caller ob1 = new Caller(target, "Hello");
         Caller ob2 = new Caller(target, "Synchronized");
         Caller ob3 = new Caller(target, "World");
+//        ob2.t.start();
 // wait for threads to end
         try {
             ob1.t.join();

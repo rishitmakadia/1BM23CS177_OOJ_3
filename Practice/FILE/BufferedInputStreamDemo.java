@@ -4,9 +4,7 @@ package Practice.FILE;
 import java.io.*;
 class BufferedInputStreamDemo {
     public static void main(String args[]) throws IOException {
-
         String s = "This is a &copy; copyright symbol " +"but this is &copy not.\n";
-
         byte buf[] = s.getBytes();
         ByteArrayInputStream in = new ByteArrayInputStream(buf);
         BufferedInputStream f = new BufferedInputStream(in);
@@ -29,7 +27,6 @@ class BufferedInputStreamDemo {
                     } else
                         System.out.print((char) c);
                     break;
-
                 case ' ':
                     if (marked) {
                         marked = false;

@@ -1,13 +1,11 @@
 package Practice.Thread;
 
 class Thread1 extends Thread {
-
     // Constructor
     Thread1() {
         super("Demo Thread");
         System.out.println("Child Thread: " + this);
     }
-
     @Override
     public void run() {
         try {

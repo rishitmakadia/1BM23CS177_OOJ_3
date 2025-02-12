@@ -25,7 +25,7 @@ public class MyEvent extends JFrame {
 
         // Display the window with a specific size
         setVisible(true);
-        setSize(200, 200);
+        setSize(700, 700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Ensure the program exits when the window is closed
     }
 

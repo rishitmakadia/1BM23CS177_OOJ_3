@@ -7,14 +7,12 @@ class clg extends Thread{
         this.str=s;
     }
     synchronized public void run(){
-        
             System.out.println("College = "+str);
             try {
                 Thread.sleep(10000);
             } catch (Exception e) {
                 System.out.println("College Exception: "+e);
             }
-        
     }
 }
 

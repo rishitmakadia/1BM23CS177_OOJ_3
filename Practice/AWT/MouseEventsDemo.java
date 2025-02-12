@@ -1,17 +1,16 @@
 package Practice;
 
-import  java.awt.event .*;
-import   java.awt .*;
+import  java.awt.event.*;
+import   java.awt.*;
 
-public class MouseEventsDemo extends Frame
-        implements MouseListener, MouseMotionListener {
+public class MouseEventsDemo extends Frame implements MouseListener, MouseMotionListener {
     String msg = "";
     int mouseX = 0, mouseY = 0; // coordinates of mouse
 
     public  MouseEventsDemo(){
         addMouseListener(this);
         addMouseMotionListener(this);
-        addWindowListener(new MyWindowAdapter());
+        addWindowListener(new MyWindow());
     }
 
 
@@ -40,7 +39,6 @@ public class MouseEventsDemo extends Frame
         repaint();
     }
 
-
     // Handle button pressed.
     public void mousePressed(MouseEvent me) {
 // save coordinates
@@ -49,7 +47,6 @@ public class MouseEventsDemo extends Frame
         msg = "Button Down";
         repaint();
     }
-
 
     // Handle button released.
     public void mouseReleased(MouseEvent me) {
@@ -60,7 +57,6 @@ public class MouseEventsDemo extends Frame
         repaint();
     }
 
-
     // Handle mouse dragged.
     public void mouseDragged(MouseEvent me) {
 // save coordinates
@@ -70,7 +66,6 @@ public class MouseEventsDemo extends Frame
 //showStatus("Dragging mouse at " + mouseX + ", " + mouseY);
         repaint();
     }
-
 
     // Handle mouse moved.
     public void mouseMoved(MouseEvent me) {

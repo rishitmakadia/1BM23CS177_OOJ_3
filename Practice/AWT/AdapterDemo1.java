@@ -10,7 +10,6 @@ public class AdapterDemo1 extends Frame {
     public AdapterDemo1() {
 
         addMouseListener(new MyMouseAdapter(this));
-
         addMouseMotionListener(new MyMouseAdapter(this));
         addWindowListener(new MyWindowAdapter());
     }
@@ -22,7 +21,7 @@ public class AdapterDemo1 extends Frame {
 
     public static void main(String args[]){
         AdapterDemo1 appwin =new AdapterDemo1();
-        appwin.setSize(new Dimension(200,150));
+        appwin.setSize(new Dimension(300,180));
         appwin.setTitle("AdapterDemo");
         appwin.setVisible(true);
     }

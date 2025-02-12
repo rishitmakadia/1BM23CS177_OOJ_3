@@ -13,7 +13,7 @@ class NewThread implements Runnable {
     // This is the entry point for thread.
     public void run() {
         try {
-            for(int i = 15; i > 0; i--) {
+            for(int i = 5; i > 0; i--) {
                 System.out.println(name + ": " + i);
                 Thread.sleep(200);
             }
@@ -28,7 +28,8 @@ class SuspendResume {
         NewThread ob1 = new NewThread("One");
         NewThread ob2 = new NewThread("Two");
         try {
-//Thread.sleep(1000);
+            Thread.sleep(1000);
+//            ob1.suspendThread();
             ob1.t.suspend();
             System.out.println("Suspending thread One");
             Thread.sleep(1000);
@@ -37,7 +38,6 @@ class SuspendResume {
             Thread.sleep(1000);
             ob2.t.suspend();
             System.out.println("Suspending thread Two");
-
             Thread.sleep(1000);
             ob2.t.resume();
             System.out.println("Resuming thread Two");

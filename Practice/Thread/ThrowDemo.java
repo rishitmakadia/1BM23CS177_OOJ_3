@@ -2,7 +2,6 @@ package Practice.Thread;
 
 // Demonstrate throw.
 class ThrowDemo {
-
     static void demoproc() {
         try {
             throw new NullPointerException("demo");
@@ -13,8 +12,6 @@ class ThrowDemo {
             throw e; // rethrow the exception
         }
     }
-
-
     public static void main(String args[]) {
         try {
             demoproc();

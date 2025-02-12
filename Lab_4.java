@@ -34,9 +34,7 @@ class Lab_4{
     public static void main(String args[]){
 
         Rectangle ob1 = new Rectangle(5.0,5.0);
-
         Triangle ob2 = new Triangle(10.0,10.0);
-
         Circle ob3 = new Circle(3.0);
 
         System.out.println("Area of Rectangle is "+ob1.printArea());

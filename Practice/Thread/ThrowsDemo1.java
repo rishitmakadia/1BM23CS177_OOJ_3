@@ -10,17 +10,12 @@ class ThrowsDemo1{
     }
 
     public static void main(String args[]) {
-
         try{
-
             throwOne();
         }
-
         catch ( IllegalAccessException e) {
             System.out.println("Caught " + e);
         }
         System.out.println("Main program Resumes");
-
     }//end of main
-
 }// end of class

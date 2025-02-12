@@ -7,7 +7,7 @@ class Hellow{
 		System.out.println("args[" + i + "]: " + args[i]);
 	}
 //	 Area of Rectangle
-		System.out.println("Area of Rectangle 9 X 5 ");
+		System.out.print("Area of Rectangle 9 X 5 : ");
 		int a=9, b=5;
 		System.out.println(a*b);
 
